@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "UTF-8">
-        <meta name="viewport", content="device=width-device,initial-scale=1.0">
-        <title>Raph's Calculator</title>
-    </head>
-    <body>
-        <input type="text" class="valueDataField" id="firstValueDataField">
-        <div>+</div>
-        <input type="text" class="valueDataField" id="secondValueDataField">
-        <div id="buttonDiv"><button onclick="fullCalc()">=</button></div>
-        <div id="resultOnScreen">0</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Raph's Calculator</title>
+</head>
+<body>
+    <!-- <div class="shownNumber">0000</div> -->
+    <div class="container">
+        <div class="numberRendererBox"><div class="numberRenderer">0</div></div>
+        <button class="button button1 allClear">AC</button>
+        <button class="button button2 numberButton7">7</button>
+        <button class="button button3 numberButton8">8</button>
+        <button class="button button4 numberButton9">9</button>
+        <button class="button button5 divide">÷</button>
+        <button class="button button6 numberButton4">4</button>
+        <button class="button button7 numberButton5">5</button>
+        <button class="button button8 numberButton6">6</button>
+        <button class="button button9 multiply">x</button>
+        <button class="button button10 numberButton1">1</button>
+        <button class="button button11 numberButton2">2</button>
+        <button class="button button12 numberButton3">3</button>
+        <button class="button button13 subtract">-</button>
+        <button class="button button14 numberButton0">0</button>
+        <button class="button button15 decimal">.</button>
+        <button class="button button16 equals">=</button>
+        <button class="button button17 add">+</button>
+    </div>
+    <footer>
         <script src="app.js"></script>
-    </body>
-    <footer></footer>
+    </footer>
+</body>
 </html>

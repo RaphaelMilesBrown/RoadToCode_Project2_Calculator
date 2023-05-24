@@ -1,0 +1,70 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body {
+    background:linear-gradient(90deg,limegreen, aquamarine);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(4,25%);
+    background:#4d5d7a;
+    max-width: 720px;
+    margin: 100px auto;
+    padding:10px;
+    border-style:ridge;
+    border-radius:5px;
+    border-radius:10px;
+}
+
+.button {
+    background-color:steelblue;
+    color:#fff;
+    font-size: 20px;
+    margin: 5px;
+    padding:10px;
+    border-style:outset;
+    border-color:skyblue;
+    border-width:10px;
+    border-radius:5px;
+}
+
+.button:active {
+    border-style:inset;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color:rgb(70, 98, 180);
+    border-color:rgb(135, 170, 235);
+    transition: all .1s;
+    transition-timing-function: linear;
+}
+
+.button1 {
+    grid-column-start:4;
+    grid-column-end:5;
+}
+
+.numberRendererBox {
+    grid-column-start:1;
+    grid-column-end:4;
+    background:white;
+    margin: 5px;
+    border-radius:5px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+}
+
+.numberRenderer {
+    margin:10px;
+    font-size:30px;
+}
